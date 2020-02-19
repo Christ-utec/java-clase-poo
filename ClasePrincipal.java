@@ -598,6 +598,36 @@ class ClasePrincipal {
                         System.out.println("Tomando datos de la clase Asignatura...");
                         System.out.println("#########################################################" + "\n");
                         sc.nextLine();
+
+                        System.out.println("Nombre de la asignatura");
+                        asignatura.nombre = sc.nextLine();
+                        System.out.println("Escriba la aula donde se imparte");
+                        asignatura.aula = sc.nextLine();
+                        System.out.println("Escriba el horario de la asignatura");
+                        asignatura.horario = sc.nextLine();
+                        System.out.println("Escriba la carrera a la que pertenece");
+                        asignatura.carrera = sc.nextLine();
+
+                        System.out.println("Nombre de la asignatura: " + asignatura.nombre);
+                        System.out.println("Aula en la que se imparte: " + asignatura.aula);
+                        System.out.println("Horario para la asignatura: " + asignatura.horario);
+                        System.out.println("Carrera que pertence: " + asignatura.carrera);
+
+                        System.out.println("\n");
+
+                        // Continue....
+                        // sc.nextLine();
+                        System.out.println("Desea continuar S o N?");
+                        comparacion = sc.nextLine();
+
+                        if (comparacion.equals("s")) {
+                            Mostrardatos();
+                            wardito = sc.nextInt();
+                            Limpiar();
+                        } else {
+                            ward = true;
+                        }
+
                         break;
 
                     case 14:
