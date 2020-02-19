@@ -635,6 +635,36 @@ class ClasePrincipal {
                         System.out.println("Tomando datos de la clase Libros...");
                         System.out.println("#########################################################" + "\n");
                         sc.nextLine();
+
+                        System.out.println("Ingrese el nombre del libro");
+                        libros.nombre = sc.nextLine();
+                        System.out.println("Autor del libro");
+                        libros.autor = sc.nextLine();
+                        System.out.println("Ingrese la fecha de lanzamiento del libro");
+                        libros.fechaLanzamiento =sc.nextLine();
+                        System.out.println("Ingrese le valor del libro. Ejemp: 100.11");
+                        libros.precio = sc.nextFloat();
+
+                        System.out.println("Nombre del libro: " + libros.nombre);
+                        System.out.println("Fecha de lazanmiento: " + libros.fechaLanzamiento);
+                        System.out.println("Autor: " + libros.autor);
+                        System.out.println("Precio: " + libros.precio);
+
+                        System.out.println("\n");
+
+                        // Continue....
+                        // sc.nextLine();
+                        System.out.println("Desea continuar S o N?");
+                        comparacion = sc.nextLine();
+
+                        if (comparacion.equals("s")) {
+                            Mostrardatos();
+                            wardito = sc.nextInt();
+                            Limpiar();
+                        } else {
+                            ward = true;
+                        }
+
                         break;
 
                     case 15:
