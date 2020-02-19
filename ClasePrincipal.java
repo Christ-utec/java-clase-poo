@@ -559,6 +559,38 @@ class ClasePrincipal {
                         System.out.println("Tomando datos de la clase Iglesia...");
                         System.out.println("#########################################################" + "\n");
                         sc.nextLine();
+
+                        System.out.println("Ingrese la ubicacion de la iglesia");
+                        iglesia.ubicacion = sc.nextLine();
+                        System.out.println("Ingrese el horario de la iglesia");
+                        iglesia.horario = sc.nextLine();
+                        System.out.println("Ingrese la religion que es");
+                        iglesia.religion = sc.nextLine();
+                        System.out.println("Ingrese el nombre del pastor");
+                        iglesia.pastor = sc.nextLine();
+                        System.out.println("");
+                        System.out.println("================================");
+                        System.out.println("INFORMACION DE LA IGLESIA");
+                        System.out.println("La iglesia esta ubicada en : " + iglesia.ubicacion);
+                        System.out.println("Los horarios son : " + iglesia.horario);
+                        System.out.println("La religion es : " + iglesia.religion);
+                        System.out.println("El pastor es : " + iglesia.pastor);
+
+                        System.out.println("\n");
+
+                        // Continue....
+                        // sc.nextLine();
+                        System.out.println("Desea continuar S o N?");
+                        comparacion = sc.nextLine();
+
+                        if (comparacion.equals("s")) {
+                            Mostrardatos();
+                            wardito = sc.nextInt();
+                            Limpiar();
+                        } else {
+                            ward = true;
+                        }
+
                         break;
 
                     case 13:
