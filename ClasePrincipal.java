@@ -379,6 +379,7 @@ class ClasePrincipal {
                         salonClases.piso = sc.nextLine();
                         System.out.println("Ingrese el numero de cuantos alumnos caben");
                         salonClases.capacidad = sc.nextInt();
+                        sc.nextLine();
                         System.out.println("Ingrese el estado del salon");
                         salonClases.estado = sc.nextLine();
                         System.out.println("Ingrese el numero de edificio");
