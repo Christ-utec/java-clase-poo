@@ -420,7 +420,7 @@ class ClasePrincipal {
                         carrera.tipo = sc.nextLine();
 
                         System.out.println("La carrera ingresada es: " + carrera.nombre);
-                        System.out.println("Cantidad de materias para esta carrera" + carrera.cantidadMaterias);
+                        System.out.println("Cantidad de materias para esta carrera: " + carrera.cantidadMaterias);
                         System.out.println("La carrera esta disponible? " + carrera.estado);
                         System.out.println("Ingrese el tipo de carrera: " + carrera.tipo);
 
@@ -701,7 +701,7 @@ class ClasePrincipal {
                         } else {
                             ward = true;
                         }
-                        
+
                         break;
 
                     case 21:
