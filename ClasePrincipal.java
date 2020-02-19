@@ -519,6 +519,39 @@ class ClasePrincipal {
                         System.out.println("Tomando datos de la clase Hotel...");
                         System.out.println("#########################################################" + "\n");
                         sc.nextLine();
+
+                        System.out.println("INFORMACION DE HOTEL");
+                        System.out.println("");
+                        System.out.println("Ingrese el nombre del hotel");
+                        hotel.nombreHotel = sc.nextLine();
+                        System.out.println("Donde esta ubicado el hotel");
+                        hotel.ubicacion = sc.nextLine();
+                        System.out.println("Numero de telefono");
+                        hotel.nuTelefono = sc.nextLine();
+                        System.out.println("Precio por estadia");
+                        hotel.precio = sc.nextLine();
+                        System.out.println("");
+                        System.out.println("LOS DATOS INGRESADOS SON");
+                        System.out.println("El nombre del Hotel es :" + hotel.nombreHotel);
+                        System.out.println("La ubicacion es :" + hotel.ubicacion);
+                        System.out.println("El numero de telefono es :" + hotel.nuTelefono);
+                        System.out.println("El precio es :" + hotel.precio);
+
+                        System.out.println("\n");
+
+                        // Continue....
+                        // sc.nextLine();
+                        System.out.println("Desea continuar S o N?");
+                        comparacion = sc.nextLine();
+
+                        if (comparacion.equals("s")) {
+                            Mostrardatos();
+                            wardito = sc.nextInt();
+                            Limpiar();
+                        } else {
+                            ward = true;
+                        }
+
                         break;
 
                     case 12:
