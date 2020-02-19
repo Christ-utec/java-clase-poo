@@ -641,7 +641,7 @@ class ClasePrincipal {
                         System.out.println("Autor del libro");
                         libros.autor = sc.nextLine();
                         System.out.println("Ingrese la fecha de lanzamiento del libro");
-                        libros.fechaLanzamiento =sc.nextLine();
+                        libros.fechaLanzamiento = sc.nextLine();
                         System.out.println("Ingrese le valor del libro. Ejemp: 100.11");
                         libros.precio = sc.nextFloat();
 
@@ -672,6 +672,36 @@ class ClasePrincipal {
                         System.out.println("Tomando datos de la clase Parque...");
                         System.out.println("#########################################################" + "\n");
                         sc.nextLine();
+
+                        System.out.println("Ingrese el nombre del parque");
+                        parque.nombrePar = sc.nextLine();
+                        System.out.println("Ingrese la ubicacion del parque");
+                        parque.ubicacion = sc.nextLine();
+                        System.out.println("Ingrese el horario de atencion");
+                        parque.horario = sc.nextLine();
+                        System.out.println("Ingrese las reglas del parque");
+                        parque.reglas = sc.nextLine();
+                        System.out.println("==================================");
+                        System.out.println("El nombre del parque es : " + parque.nombrePar);
+                        System.out.println("La ubicacion del parque es : " + parque.ubicacion);
+                        System.out.println("El horario de atencion es : " + parque.horario);
+                        System.out.println("Las reglas son : " + parque.reglas);
+
+                        System.out.println("\n");
+
+                        // Continue....
+                        // sc.nextLine();
+                        System.out.println("Desea continuar S o N?");
+                        comparacion = sc.nextLine();
+
+                        if (comparacion.equals("s")) {
+                            Mostrardatos();
+                            wardito = sc.nextInt();
+                            Limpiar();
+                        } else {
+                            ward = true;
+                        }
+                        
                         break;
 
                     case 21:
