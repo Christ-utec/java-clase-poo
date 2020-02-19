@@ -412,12 +412,14 @@ class ClasePrincipal {
 
                         System.out.println("Ingrese el nombre de la Carrera: ");
                         carrera.nombre = sc.nextLine();
-                        System.out.println("Ingrese la cantidad de materias para esta tarea");
-                        carrera.cantidadMaterias = sc.nextInt();
+                        
                         System.out.println("Ingrese si esta disponible la materia");
                         carrera.estado = sc.nextLine();
                         System.out.println("Ingrese el tipo de carrera. Por ejemp. Lic, Ing, etc...");
                         carrera.tipo = sc.nextLine();
+                        System.out.println("Ingrese la cantidad de materias para esta tarea");
+                        carrera.cantidadMaterias = sc.nextInt();
+                        sc.nextLine();
 
                         System.out.println("La carrera ingresada es: " + carrera.nombre);
                         System.out.println("Cantidad de materias para esta carrera: " + carrera.cantidadMaterias);
@@ -438,6 +440,8 @@ class ClasePrincipal {
                         } else {
                             ward = true;
                         }
+
+                        break;
                     case 9:
                         System.out.println("Usted seleccion Banco como opcion");
                         System.out.println("Tomando datos de la clase Banco...");
@@ -642,8 +646,9 @@ class ClasePrincipal {
                         libros.autor = sc.nextLine();
                         System.out.println("Ingrese la fecha de lanzamiento del libro");
                         libros.fechaLanzamiento = sc.nextLine();
-                        System.out.println("Ingrese le valor del libro. Ejemp: 100.11");
+                        System.out.println("Ingrese le valor del libro. Ejemp: 100,11");
                         libros.precio = sc.nextFloat();
+                        sc.nextLine();
 
                         System.out.println("Nombre del libro: " + libros.nombre);
                         System.out.println("Fecha de lazanmiento: " + libros.fechaLanzamiento);
