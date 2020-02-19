@@ -443,7 +443,7 @@ class ClasePrincipal {
                         System.out.println("Tomando datos de la clase Banco...");
                         System.out.println("#########################################################" + "\n");
                         sc.nextLine();
-                        
+
                         System.out.println("Ingrese nombre del banco");
                         banco.nombreBa = sc.nextLine();
                         System.out.println("Ingrese la direccion del banco");
@@ -474,7 +474,7 @@ class ClasePrincipal {
                         } else {
                             ward = true;
                         }
-                        
+
                         break;
 
                     case 10:
@@ -482,6 +482,36 @@ class ClasePrincipal {
                         System.out.println("Tomando datos de la clase Farmacia...");
                         System.out.println("#########################################################" + "\n");
                         sc.nextLine();
+
+                        System.out.println("Ingrese el nombre de la farmacia");
+                        farmacia.nombreFa = sc.nextLine();
+                        System.out.println("Ingrese la direccion de la farmacia");
+                        farmacia.direccion = sc.nextLine();
+                        System.out.println("Ingrese el numero de telefono de la farmacia");
+                        farmacia.nuTelefono = sc.nextLine();
+                        System.out.println("Ingrese el nombre de la medicina");
+                        farmacia.medicina = sc.nextLine();
+                        System.out.println("==============================");
+                        System.out.println("La farmacia se llama : " + farmacia.nombreFa);
+                        System.out.println("La direccion es : " + farmacia.direccion);
+                        System.out.println("El numero de telefono es : " + farmacia.nuTelefono);
+                        System.out.println("El medicamento es : " + farmacia.medicina);
+
+                        System.out.println("\n");
+
+                        // Continue....
+                        // sc.nextLine();
+                        System.out.println("Desea continuar S o N?");
+                        comparacion = sc.nextLine();
+
+                        if (comparacion.equals("s")) {
+                            Mostrardatos();
+                            wardito = sc.nextInt();
+                            Limpiar();
+                        } else {
+                            ward = true;
+                        }
+
                         break;
 
                     case 11:
